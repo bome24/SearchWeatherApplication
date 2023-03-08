@@ -14,6 +14,7 @@
 		244F9B8829B89699008FA3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244F9B8729B89699008FA3B3 /* Assets.xcassets */; };
 		244F9B8B29B89699008FA3B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244F9B8929B89699008FA3B3 /* LaunchScreen.storyboard */; };
 		244F9B9429B898EC008FA3B3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F9B9329B898EC008FA3B3 /* Weather.swift */; };
+		244F9B9729B89A7B008FA3B3 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244F9B9629B89A7B008FA3B3 /* URLRequest+Extensions.swift */; };
 		88AAF523E5329D03764AE630 /* Pods_SearchWeatherApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7A0DD56766EC94789ED57E /* Pods_SearchWeatherApplication.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		244F9B8A29B89699008FA3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		244F9B8C29B89699008FA3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		244F9B9329B898EC008FA3B3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		244F9B9629B89A7B008FA3B3 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
 		2AFD88D95C185A2C24638AD3 /* Pods-SearchWeatherApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchWeatherApplication.release.xcconfig"; path = "Target Support Files/Pods-SearchWeatherApplication/Pods-SearchWeatherApplication.release.xcconfig"; sourceTree = "<group>"; };
 		CD7A0DD56766EC94789ED57E /* Pods_SearchWeatherApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchWeatherApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67C50FE4E6F1D4BED07AA95 /* Pods-SearchWeatherApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchWeatherApplication.debug.xcconfig"; path = "Target Support Files/Pods-SearchWeatherApplication/Pods-SearchWeatherApplication.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		244F9B7D29B89697008FA3B3 /* SearchWeatherApplication */ = {
 			isa = PBXGroup;
 			children = (
+				244F9B9529B89A68008FA3B3 /* Extensions */,
 				244F9B9229B898C0008FA3B3 /* Models */,
 				244F9B7E29B89697008FA3B3 /* AppDelegate.swift */,
 				244F9B8029B89697008FA3B3 /* SceneDelegate.swift */,
@@ -85,13 +88,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		244F9B9529B89A68008FA3B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				244F9B9629B89A7B008FA3B3 /* URLRequest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		38E3949718CB5E54DB6954CE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E67C50FE4E6F1D4BED07AA95 /* Pods-SearchWeatherApplication.debug.xcconfig */,
 				2AFD88D95C185A2C24638AD3 /* Pods-SearchWeatherApplication.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -221,6 +231,7 @@
 				244F9B9429B898EC008FA3B3 /* Weather.swift in Sources */,
 				244F9B8329B89697008FA3B3 /* ViewController.swift in Sources */,
 				244F9B7F29B89697008FA3B3 /* AppDelegate.swift in Sources */,
+				244F9B9729B89A7B008FA3B3 /* URLRequest+Extensions.swift in Sources */,
 				244F9B8129B89697008FA3B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
