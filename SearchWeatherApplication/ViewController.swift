@@ -21,9 +21,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.citySearchTextField.rx.value
+        self.citySearchTextField.rx.controlEvent(.editingDidEndOnExit)
+            .asObservable()
+            .map { self.citySearchTextField.text }
             .subscribe(onNext: { city in
-                
                 if let city = city {
                     if city.isEmpty {
                         self.displayWeather(nil)
@@ -31,7 +32,6 @@ class ViewController: UIViewController {
                         self.fetchWeather(by: city)
                     }
                 }
-                
             }).disposed(by: disposeBag)
         
     }
